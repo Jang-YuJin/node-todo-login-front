@@ -1,0 +1,238 @@
+body {
+  background-color: #fff6f9 !important; /* 연한 핑크 */
+  color: #5b4b57;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+/* Todo 카드 */
+.todo-item {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(255, 182, 193, 0.25);
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+}
+.todo-content{
+  padding:1em
+}
+.add-item-row{
+  margin-top:50px !important;
+  margin-bottom: 30px;
+}
+.input-box {
+  padding: 12px;
+  width: 100%;
+  border-radius: 14px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.2);
+}
+
+.input-box::placeholder {
+  color: #c7a1b0;
+}
+
+.button-add {
+  height: 44px;
+  width: 100%;
+  border-radius: 14px;
+  border: none;
+  background-color: #ff8fab;
+  color: white;
+  font-weight: bold;
+}
+
+.button-add:hover {
+  background-color: #ff6f91;
+}
+.button-delete {
+  background-color: #fff0f5;
+  border: none;
+  border-radius: 12px;
+  color: #ff6f91;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.button-delete:hover {
+  background-color: #ffd6e8;
+}
+
+.item-complete {
+  background-color: #ffe4ec;
+}
+.todo-text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.todo-text.complete {
+  text-decoration: line-through;
+  color: #b08999;
+}
+
+.todo-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #ff8fab; /* 핵심 */
+  cursor: pointer;
+}
+
+.complete-date {
+  font-size: 0.75rem;
+  color: #9d8189;
+  margin-top: 4px;
+}
+
+.display-center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  background-color: #ffffff;
+  padding: 32px 28px;
+  border-radius: 24px;
+  box-shadow: 0 10px 20px rgba(255, 182, 193, 0.35);
+}
+
+.login-box h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #5b4b57;
+}
+
+.login-box .form-control {
+  border-radius: 14px;
+  border: none;
+  padding: 12px;
+  background-color: #fff6f9;
+  box-shadow: inset 0 2px 4px rgba(255, 182, 193, 0.25);
+}
+
+.login-box .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffb3c6;
+}
+
+.login-box label {
+  font-size: 0.85rem;
+  color: #9d8189;
+}
+
+.button-primary {
+  width: 100%;
+  height: 44px;
+  border-radius: 14px;
+  border: none;
+  background-color: #ff8fab;
+  color: white;
+  font-weight: bold;
+}
+
+.button-primary:hover {
+  background-color: #ff6f91;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.button-box span {
+  font-size: 0.8rem;
+  color: #9d8189;
+}
+
+.button-box a {
+  color: #ff6f91;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button-box a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  background-color: #ffe4ec;
+  color: #c9184a;
+  padding: 12px 20px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  box-shadow: 0 6px 14px rgba(255, 182, 193, 0.45);
+}
+
+.todo-meta {
+  margin-top: 6px;
+}
+
+.todo-author {
+  font-size: 0.75rem;
+  color: #9d8189;
+  background-color: #fff0f5;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 0 24px;
+}
+
+.greeting h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #5b4b57;
+}
+
+.greeting p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #9d8189;
+}
+
+.logout-button {
+  background-color: #fff0f5;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  color: #ff6f91;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #ffd6e8;
+}
